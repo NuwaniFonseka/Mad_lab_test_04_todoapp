@@ -12,7 +12,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="18dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/poppins"
         android:text="Notes."
         android:textColor="@color/green"
         android:textSize="24sp"

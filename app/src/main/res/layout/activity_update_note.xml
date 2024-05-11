@@ -15,7 +15,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/poppins"
         android:text="Edit Note."
         android:textColor="@color/green"
         android:textSize="24sp" />
@@ -37,7 +36,6 @@
         android:layout_below="@+id/editNoteHeading"
         android:layout_marginTop="16dp"
         android:background="@drawable/orange_border"
-        android:fontFamily="@font/poppins"
         android:hint="Enter the title"
         android:maxLines="1"
         android:padding="12dp"
@@ -51,7 +49,6 @@
         android:layout_below="@+id/updateTitleEditText"
         android:layout_marginTop="12dp"
         android:background="@drawable/orange_border"
-        android:fontFamily="@font/poppins"
         android:gravity="top"
         android:hint="Enter the description"
         android:padding="12dp"

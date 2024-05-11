@@ -14,7 +14,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/poppins"
         android:text="Add Note."
         android:textColor="#008080"
         android:textSize="24sp" />
@@ -38,7 +37,7 @@
         android:background="@drawable/orange_border"
         android:layout_marginTop="16dp"
         android:maxLines="1"
-        android:fontFamily="@font/poppins"
+
         />
 
     <EditText
@@ -49,7 +48,6 @@
         android:gravity="top"
         android:padding="12dp"
         android:textSize="18sp"
-        android:fontFamily="@font/poppins"
         android:layout_below="@+id/titleEditText"
         android:background="@drawable/orange_border"
         android:layout_marginTop="12dp"
