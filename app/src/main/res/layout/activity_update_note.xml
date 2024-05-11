@@ -46,6 +46,7 @@
         android:id="@+id/updateContentEditText"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+
         android:layout_below="@+id/updateTitleEditText"
         android:layout_marginTop="12dp"
         android:background="@drawable/orange_border"

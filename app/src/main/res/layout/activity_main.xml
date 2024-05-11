@@ -37,6 +37,7 @@
         android:backgroundTint="@color/green"
         android:src="@drawable/baseline_add_24"
         android:tint="#FFFEFE"
+
         tools:ignore="ContentDescription,SpeakableTextPresentCheck"
         />
 
