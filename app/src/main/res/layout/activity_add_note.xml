@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-
     tools:context=".AddNoteActivity">
 
     <TextView
@@ -53,5 +52,6 @@
         android:background="@drawable/orange_border"
         android:layout_marginTop="12dp"
         />
+
 
 </RelativeLayout>
