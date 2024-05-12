@@ -17,6 +17,7 @@
         android:text="Add Note."
         android:textColor="#008080"
         android:textSize="24sp" />
+
     <ImageView
         android:id="@+id/saveButton"
         android:layout_width="wrap_content"
@@ -24,11 +25,11 @@
         android:layout_alignParentEnd="true"
         android:src="@drawable/baseline_check_24"
         android:layout_alignTop="@+id/addNoteHeading"
-        android:layout_marginEnd="6dp"
-        />
+        android:layout_marginEnd="6dp" />
+
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:id="@+id/titleEditText"
         android:hint="Enter the title"
         android:padding="12dp"
@@ -36,13 +37,12 @@
         android:layout_below="@+id/addNoteHeading"
         android:background="@drawable/orange_border"
         android:layout_marginTop="16dp"
-        android:maxLines="1"
+        android:maxLines="1" />
 
-        />
-
+    <!-- Decreased the height of the contentEditText -->
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="120dp"
         android:id="@+id/contentEditText"
         android:hint="Enter the description"
         android:gravity="top"
@@ -50,8 +50,46 @@
         android:textSize="18sp"
         android:layout_below="@+id/titleEditText"
         android:background="@drawable/orange_border"
-        android:layout_marginTop="12dp"
-        />
+        android:layout_marginTop="12dp" />
 
+    <!-- Date Picker -->
+    <Button
+        android:id="@+id/datePickerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:textColor="@color/black"
+        android:layout_below="@id/contentEditText"
+        android:layout_marginTop="12dp"/>
+
+    <!-- TextView to display selected date -->
+    <TextView
+        android:id="@+id/selectedDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/datePickerButton"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentStart="true"/>
+
+    <!-- Time Picker -->
+    <Button
+        android:id="@+id/timePickerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Time"
+        android:textColor="@color/black"
+        android:layout_below="@id/selectedDateTextView"
+        android:layout_marginTop="12dp"/>
+
+    <!-- TextView to display selected time -->
+    <TextView
+        android:id="@+id/selectedTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/timePickerButton"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentStart="true"/>
 
 </RelativeLayout>
