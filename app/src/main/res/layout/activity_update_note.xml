@@ -9,7 +9,6 @@
     tools:context=".UpdateNoteActivity">
 
     <TextView
-
         android:id="@+id/editNoteHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,7 +19,6 @@
         android:textSize="24sp" />
 
     <ImageView
-
         android:id="@+id/updateSaveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,12 +39,11 @@
         android:padding="12dp"
         android:textSize="20sp" />
 
+    <!-- Decreased the height of the updateContentEditText -->
     <EditText
-
         android:id="@+id/updateContentEditText"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
+        android:layout_height="120dp"
         android:layout_below="@+id/updateTitleEditText"
         android:layout_marginTop="12dp"
         android:background="@drawable/orange_border"
@@ -54,5 +51,45 @@
         android:hint="Enter the description"
         android:padding="12dp"
         android:textSize="18sp" />
+
+    <!-- Date Picker -->
+    <Button
+        android:id="@+id/updateDatePickerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:textColor="@color/black"
+        android:layout_below="@id/updateContentEditText"
+        android:layout_marginTop="12dp"/>
+
+    <!-- TextView to display selected date -->
+    <TextView
+        android:id="@+id/updateSelectedDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/updateDatePickerButton"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentStart="true"/>
+
+    <!-- Time Picker -->
+    <Button
+        android:id="@+id/updateTimePickerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Time"
+        android:textColor="@color/black"
+        android:layout_below="@id/updateSelectedDateTextView"
+        android:layout_marginTop="12dp"/>
+
+    <!-- TextView to display selected time -->
+    <TextView
+        android:id="@+id/updateSelectedTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/updateTimePickerButton"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentStart="true"/>
 
 </RelativeLayout>
