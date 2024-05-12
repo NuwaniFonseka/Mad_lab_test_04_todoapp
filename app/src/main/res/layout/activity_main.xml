@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#3F51B5"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -13,7 +14,7 @@
         android:layout_marginStart="18dp"
         android:layout_marginTop="16dp"
         android:text="TO-DO"
-        android:textColor="@color/green"
+        android:textColor="#EEF1F1"
         android:textSize="24sp"
         tools:ignore="HardcodedText" />
 
@@ -34,7 +35,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/green"
+        android:backgroundTint="#EEF1F1"
         android:src="@drawable/baseline_add_24"
         android:tint="#FFFEFE"
 

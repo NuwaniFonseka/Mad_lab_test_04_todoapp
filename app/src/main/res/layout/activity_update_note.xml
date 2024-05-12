@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:background="#3F51B5"
     tools:context=".UpdateNoteActivity">
 
     <TextView
@@ -15,7 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
         android:text="Edit Tasks"
-        android:textColor="@color/green"
+        android:textColor="#EEF1F1"
         android:textSize="24sp" />
 
     <ImageView
@@ -33,6 +34,7 @@
         android:layout_height="60dp"
         android:layout_below="@+id/editNoteHeading"
         android:layout_marginTop="16dp"
+        android:textColor="@color/white"
         android:background="@drawable/orange_border"
         android:hint="Enter the title"
         android:maxLines="1"
@@ -48,6 +50,7 @@
         android:layout_marginTop="12dp"
         android:background="@drawable/orange_border"
         android:gravity="top"
+        android:textColor="@color/white"
         android:hint="Enter the description"
         android:padding="12dp"
         android:textSize="18sp" />
@@ -57,10 +60,11 @@
         android:id="@+id/updateDatePickerButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select Date"
-        android:textColor="@color/black"
         android:layout_below="@id/updateContentEditText"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#EEF1F1"
+        android:text="Select Date"
+        android:textColor="@color/black" />
 
     <!-- TextView to display selected date -->
     <TextView
@@ -77,10 +81,11 @@
         android:id="@+id/updateTimePickerButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select Time"
-        android:textColor="@color/black"
         android:layout_below="@id/updateSelectedDateTextView"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#EEF1F1"
+        android:text="Select Time"
+        android:textColor="@color/black" />
 
     <!-- TextView to display selected time -->
     <TextView
