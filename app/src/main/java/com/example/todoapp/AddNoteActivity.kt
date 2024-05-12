@@ -76,16 +76,16 @@ class AddNoteActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
     private fun saveNote() {
         val title = binding.titleEditText.text.toString()
         val content = binding.contentEditText.text.toString()
-        val note = Note(0, title, content)
-        db.insertNote(note)
 
         // Append selected date and time to the note's content
         val formattedDateTime = "$selectedDay/${selectedMonth + 1}/$selectedYear $selectedHour:$selectedMinute"
         val updatedContent = "$content\nSelected Date & Time: $formattedDateTime"
-        val updatedNote = Note(0, title, updatedContent)
-        db.insertNote(updatedNote)
+
+        val note = Note(0, title, updatedContent)
+        db.insertNote(note)
 
         finish()
         Toast.makeText(this, "Note Saved", Toast.LENGTH_SHORT).show()
     }
+
 }
