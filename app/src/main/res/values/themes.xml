@@ -2,9 +2,9 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.TODOAPP" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <item name="colorPrimary">@color/green</item>
-        <item name="colorPrimaryVariant">@color/green</item>
-        <item name="android:statusBarColor">@color/green</item>
+        <item name="colorPrimary">#3F51B5</item>
+        <item name="colorPrimaryVariant">#3F51B5</item>
+        <item name="android:statusBarColor">#3F51B5</item>
     </style>
 
     <style name="Theme.TODOAPP" parent="Base.Theme.TODOAPP" />
